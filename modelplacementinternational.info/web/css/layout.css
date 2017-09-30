@@ -1,0 +1,197 @@
+@font-face {
+	font-family: 'MyriadPro-Regular';
+	src: url('fonts/MyriadPro-Regular.eot');
+	src: local('☺'), url('fonts/MyriadPro-Regular.woff') format('woff'), url('fonts/MyriadPro-Regular.ttf') format('truetype'), url('fonts/MyriadPro-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MyriadPro-BoldCond';
+	src: url('fonts/MyriadPro-BoldCond.eot');
+	src: local('☺'), url('fonts/MyriadPro-BoldCond.woff') format('woff'), url('fonts/MyriadPro-BoldCond.ttf') format('truetype'), url('fonts/MyriadPro-BoldCond.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MyriadPro-Cond';
+	src: url('fonts/MyriadPro-Cond.eot');
+	src: local('☺'), url('fonts/MyriadPro-Cond.woff') format('woff'), url('fonts/MyriadPro-Cond.ttf') format('truetype'), url('fonts/MyriadPro-Cond.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+body{
+	background: url(../images/page_bg_pattern.jpg);	
+}
+
+body,html{
+	height: 100%;
+	min-height: 100%;
+	color: #fff;
+}
+
+a{
+	color: #fff;
+}
+a:hover{
+	
+}
+a:active{
+	
+}
+a:visited{
+	
+}
+.container{
+	width: 960px;
+	margin:0 auto;
+}
+
+header{
+	padding-top: 20px;
+}
+nav{
+	padding-top: 10px;
+}
+footer{
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+.center{text-align:center;}
+.right{text-align:right;}
+.left{text-align:left;}
+.strong{font-weight:bold;}
+.marb{margin-bottom: 30px !important;}
+
+.globe-box{
+	background: url(../images/globe_large.png) center no-repeat;
+	
+}
+
+.menu-pad{
+	height: 360px;
+	padding-top: 240px;
+	vertical-align: middle;
+}
+
+ul.main-menu{
+	margin:0;
+	padding:0;
+	font-family: 'MyriadPro-BoldCond';
+	background: url(../images/menu_bg.jpg) repeat-x;
+	border: 1px solid #959595;
+	height: 83px;
+	overflow:hidden;
+}
+
+.menu-pad ul.main-menu{ 
+	vertical-align:top;
+}
+
+ul.main-menu li{
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+	margin:0;
+	padding:0;
+	border-right: 1px solid #959595;
+	height: 83px;
+	overflow:hidden;
+	font-size: 26pt;
+	text-transform: uppercase;
+	font-weight:normal;
+	letter-spacing: .05em;
+	line-height: 26px;
+	text-align: center;
+	vertical-align:top;
+}
+ul.main-menu li.smaller{
+	font-size: 20pt;
+	width: 210px;
+	
+}
+
+ul.main-menu li a{
+	display:block;
+	height: 63px;
+	margin-left: 16px;
+	margin-right: 16px;
+	margin-top: 10px;
+	text-decoration: none;
+	font-weight:normal;
+	padding: 4px;
+	padding-top: 15px;
+}
+ul.main-menu li a:hover{
+	background: url(../images/menu_bg_hover.jpg) repeat-x;
+}
+ul.main-menu li.smaller a{
+	margin-top: 10px;
+	padding-top: 8px;
+}
+
+ul.main-menu li:last-child{
+	border:none;
+}
+
+
+.default_container{
+	background: #000;
+	border-top: 2px solid #5f5f5f;
+	border-bottom: 1px solid #5f5f5f;
+	margin-top: 10px;
+	min-height: 600px;
+	font-family: 'MyriadPro-Cond';
+	color: #7b7b7b;
+	text-transform: uppercase;
+	font-size: 16pt;
+	text-align: justify;
+}
+.default_container p{
+	margin-bottom: 3px;
+}
+.default_container ul{
+	margin:0;
+	padding:0;
+	margin-bottom: 3px;
+}
+.default_container ul li{
+	padding:0;
+	margin:0;
+	padding-left: 25px;
+	list-style: none;
+	height: 25px;
+}
+h1{
+	font-family: 'MyriadPro-BoldCond';
+	text-transform: uppercase;
+	margin:0;
+	padding:0;
+	margin-top: 10px;
+	font-size:22pt;
+	color: #fff;
+	letter-spacing: 2px;
+}
+.default_container a{
+	color: #fea01a;
+	text-decoration: underline;
+}
+
+a.app_button, a.login_button{
+	display: block;
+	margin: 0 auto;
+	padding: 3px;
+	width: 200px;
+	text-align:center;
+	background: url(../images/menu_bg_hover.jpg) repeat-x;
+	color: #fff;
+	font-size: 16pt;
+	font-family: 'MyriadPro-BoldCond';
+	text-decoration: none;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}

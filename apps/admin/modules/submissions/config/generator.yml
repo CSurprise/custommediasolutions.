@@ -1,0 +1,39 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Submissions
+    theme:                 jroller
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          submissions
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+         gender_named:
+            label: Gender
+         full_name:
+            label: Name
+         phone_numbers:
+            label: Phone Number(s)
+         website_name:
+            label: Website
+         created_at:
+            label: Submitted On
+      list:    
+         display: [website_name,submission_date,full_name,age,gender_named,phone_numbers,email,location]
+         table_method: loadIndex
+         sort: [created_at,desc]
+      filter:  
+         display: [created_at,first_name,last_name,age,gender,email,city,phone,state,website_id]
+      form:  
+        display:  
+           "Submission Details": [_hidden,first_name,last_name,age,gender,height,weight,_interests]
+           "Contact Details": [phone,cell,email,address,city,state,zipcode]
+           "Comments": [_comments]
+      edit:    ~
+      new:     ~

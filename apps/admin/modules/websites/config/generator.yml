@@ -1,0 +1,37 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Websites
+    theme:                 jroller
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          websites
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+         created_at:
+            label: Created On
+         url_as_real:
+            label: URL
+         content_title:
+            label: Content
+         url:
+            label: URL
+         redirect_after_submission:
+            label: Content After Submission
+      list:    
+         display: [=name,created_at,url_as_real,content_title]
+         table_method: loadIndex
+      filter:  
+         display: [name,url,default_content_id]
+      form:    
+         display:
+            "Parameters": [name,_url,default_content_id,default_content_id,redirect_after_submission]
+            "Layout Configuration": [layout,_javascripts,_stylesheets]
+      edit:    ~
+      new:     ~

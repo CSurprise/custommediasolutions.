@@ -1,0 +1,32 @@
+Bookings:
+  Bookings_1:
+    created_at: '2010-07-15 15:29:18'
+    updated_at: '2010-07-15 15:29:18'
+    name: 'Booking 1'
+    published: '1'
+  Bookings_2:
+    created_at: '2010-07-15 15:29:18'
+    updated_at: '2010-07-15 15:29:18'
+    name: 'Booking 2'
+    published: '1'
+sfGuardUser:
+  sfGuardUser_1:
+    first_name: Gassan
+    last_name: Idriss
+    email_address: ghassani@gmail.com
+    username: ghassani
+    algorithm: sha1
+    salt: b3d8919459965a804b5bd8540adf11bc
+    password: a7bf152deec0727a08d02d3e051659786dc9eb5b
+    is_active: true
+    is_super_admin: false
+    last_login: null
+    created_at: '2010-09-13 13:00:53'
+    updated_at: '2010-09-13 13:00:53'
+Websites:
+  Websites_1:
+    created_at: '2010-09-13 13:05:25'
+    updated_at: '2010-09-13 13:05:25'
+    url: clients.splicedmedia.com
+    name: 'Development Site'
+    layout: modelplacementinternational

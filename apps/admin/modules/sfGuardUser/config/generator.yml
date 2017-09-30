@@ -1,0 +1,52 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           sfGuardUser
+    theme:                 jroller
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          sf_guard_user
+    with_doctrine_route:   true
+
+    config:
+      fields:
+        password_again: { label: "Password (again)" }
+        groups_list:
+           label: Website Access
+           help: Select which Websites this user has access to.
+        permissions_list:
+           label: Location Access
+           help: Select which Locations this user has access to.
+        is_super_admin:
+           label: Administrator
+           help: Check this to give this user unrestricted access to the application
+        is_active:
+           label: Active User
+           help: Uncheck this restrict this user from the application
+        password:
+           help: Fill below to reset this users password
+        first_name:
+           label: First Name
+        last_name:
+           label: Last Name
+        email_address:
+           label: E-Mail Address
+      list:
+        title:   User list
+        display: [=username, created_at, updated_at, last_login]
+      filter:
+         display: [username,email_address,groups_list,permissions_list]
+      form:
+        class: sfGuardUserAdminForm
+        display:
+          "User":                   [first_name, last_name, email_address, username, password, password_again]
+          "Permissions and groups": [is_active, is_super_admin, groups_list, permissions_list]
+          "Additional Information": [_additional]
+
+      edit:
+        title: Editing User "%%username%%"
+
+      new:
+        title: New User

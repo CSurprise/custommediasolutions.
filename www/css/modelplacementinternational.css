@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html {
+	margin: 0;
+	padding: 0;
+	/* this allows our container to be 100% height */
+	height: 100%;
+	font: 90% 'Verdana','Arial';
+	background-color: #333333;
+}
+
+.container{
+	width: 758px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+
+.form-container{
+	display:table;
+	background:url(../images/form_bg.jpg) repeat-y;
+	margin-left:1px;
+	margin-right:1px;
+}
+.head-logo{
+	background:url(../images/header_logo_bg.jpg)repeat-x;
+}
+.form{
+	display:table-cell;
+	width: 538px;
+	padding:3px;
+	vertical-align:top;
+}
+.form h2{
+	margin:0;
+}
+.bookings{
+	display:table-cell;
+	width: 220px;
+	vertical-align:top;
+}
+
+.content{
+	background:url(../images/body_bg.jpg) no-repeat scroll 0 0 #FFB200;
+	border-left:1px solid black;
+	border-right:1px solid black;
+}
+
+.form-header{
+	background:url(../images/form_header.jpg) no-repeat;
+	height:48px;
+	margin-left:1px;
+	margin-right:1px;
+}
+
+.required_field{color:red;}
+
+input {
+	background:none repeat scroll 0 0 #FFFFFF;
+	border:1px solid black;
+}
+label{font-weight:bold;}
+ul.radio_list{margin:0;padding:0;}
+ul.radio_list li{display:inline-block;}
+textarea{
+	width:98%;
+	border:1px solid #000;
+}
+.footer {
+	background:url("../images/footer.jpg") no-repeat scroll left center transparent;
+	border-left:1px solid black;
+	border-right:1px solid black;
+	height:43px;
+	vertical-align:middle;
+
+}
+.fcontent{
+	padding-top: 9px;
+	padding-left: 6px;
+}
+table.submission-form{width:500px;}
+table.submission-form td{ vertical-align:top;}
+ul.error_list{
+	margin:0;padding:0;
+}
+ul.error_list li{
+	display:inline-block;
+	margin:0;padding:0;
+	color:red;
+}
+
+ul.checkbox_list{
+	margin:0;padding:0;
+}
+ul.checkbox_list li{
+	display:block;
+	margin:0;padding:0;
+}
+
+.content h2{
+	text-align:center;
+	color:#fff;
+}
+.content h3{
+	text-align:center;
+	color:#000;
+}
+.content h4{
+	text-align:center;
+	color:#000;
+}
+.content p{
+	padding: 4px 6px 4px 6px;
+	margin: 0;
+}
+
+a{
+	color:#000;
+	text-decoration:none;
+	font-weight:bold;
+}
+a:hover{
+	color:#fff;
+}
+
+ol{margin:0;padding-top:10px;padding-bottom:10px;}
+ol li{ margin-top: 6px; margin-right:15px;margin-left:15px;}
+
+.bookings-container{
+	position:relative;
+	height: 400px;
+	overflow:hidden; 
+}
+.bookings-container .bookings-scroller{
+	position:relative;
+	height: 400px;
+	width:220px;
+	overflow:hidden; 
+}
+.bookings-container .bookings-scroller ul{
+	font-size:8pt;
+	width:220px;
+}
+.bookings-container .bookings-scroller ul li{
+	margin:0;padding:0;
+	height: 26px;
+	padding: 2px 0 2px 5px;
+	list-style:square;
+	overflow:visible;
+}

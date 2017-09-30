@@ -1,0 +1,43 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Content
+    theme:                 jroller
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          content
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  
+         created_at:
+            label: Created On
+         url_slug:
+            label: URL Slug
+         published_named:
+            label: Published
+         meta_description:
+            label: Description
+            help: 500 Characters Max
+         meta_keywords:
+            label: Keywords
+            help: You do not need more than 10 phrases. Phrases work better than keywords. Separate by keywords/phrases by a comma.
+         layout:
+            help: Setting a Layout here will overide the layout of the current website being viewed. You will also have to specify your CSS and Javscripts below as they will not be loaded.
+      list:    
+         display: [created_at,title,url_slug,published_named]
+      filter:  
+         display: [created_at,title,published]
+      form:    
+        display:  
+           "Content Details": [title,url_slug,published]
+           "SEO Settings" : [page_title,meta_keywords,meta_description]
+           "Layout Settings": [layout,_javascripts,_stylesheets]
+           "Content Source": [_content]
+      edit:    ~
+      new:     ~
+

@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, html {
+	margin: 0;
+	padding: 0;
+	/* this allows our container to be 100% height */
+	height: 100%;
+	font: 90% 'Verdana','Arial';
+	background-color: #fff;
+}
+.header{
+	text-align:center;
+	margin-bottom: 3px;
+}
+a{
+	color:#3cc5fc;
+	text-decoration:none;
+	font-weight:bold;
+}
+.container{
+	width: 758px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+
+.form-container{
+	display:table;
+	/*background:url(../images/form_bg.jpg) repeat-y;*/
+	margin-left:1px;
+	margin-right:1px;
+}
+
+.form{
+	display:table-cell;
+	width: 538px;
+	padding:3px;
+	vertical-align:top;
+}
+.form h2{
+	margin:0;
+}
+.bookings{
+	display:table-cell;
+	width: 220px;
+	vertical-align:top;
+}
+
+.content,.body{
+
+	background:#f1f1f1;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	border-radius: 8px 8px 8px 8px;
+	border: 2px solid #b8b8b8;
+	padding: 6px;
+}
+
+.body{
+	margin: 0 6px 6px 0px;
+}
+.body h1{
+	margin:0;
+	padding:0;
+}
+
+.form-header{
+	height: 10px;
+}
+
+.required_field{color:red;}
+
+.form h2{
+	border-bottom: 2px solid #3cc5fc;
+	text-align:center;
+	padding: 3px;
+	margin-bottom: 3px;
+}
+.form h3{
+	border-bottom: 1px solid #3cc5fc;
+	text-align:left;
+	padding: 3px;
+	margin:0;
+	margin-bottom: 3px;
+}
+input {
+	background:none repeat scroll 0 0 #fafafa;
+	border:1px solid black;
+}
+label{font-weight:bold;}
+ul.radio_list{margin:0;padding:0;}
+ul.radio_list li{display:inline-block;}
+textarea{
+	width:98%;
+	border:1px solid #000;
+	background:#fafafa;
+}
+select{
+	border:1px solid #000;
+	background:#fafafa;
+}
+.footer {
+	background:#f1f1f1;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	border-radius: 8px 8px 8px 8px;
+	border: 2px solid #b8b8b8;
+	padding: 6px;
+}
+table.submission-form{width:500px;}
+table.submission-form td{ vertical-align:top;}
+ul.error_list{
+	margin:0;padding:0;
+}
+ul.error_list li{
+	display:inline-block;
+	margin:0;padding:0;
+	color:red;
+}
+
+ul.checkbox_list{
+	margin:0;padding:0;
+}
+ul.checkbox_list li{
+	display:block;
+	margin:0;padding:0;
+}
+.bookings-container{
+	position:relative;
+	height: 385px;
+	overflow:hidden; 
+	background:#e2e2e2;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	border-radius: 8px 8px 8px 8px;
+	border: 2px solid #b8b8b8;
+	padding: 3px;
+}
+.bookings-container .bookings-scroller{
+	position:relative;
+	height: 400px;
+	width:220px;
+	overflow:hidden; 
+}
+.bookings-container .bookings-scroller ul{
+	font-size:8pt;
+	width:220px;
+}
+.bookings-container .bookings-scroller ul li{
+	margin:0;padding:0;
+	height: 26px;
+	padding: 2px 0 2px 5px;
+	list-style:square;
+	overflow:visible;
+}

@@ -1,0 +1,34 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/13-View
+
+signinSuccess:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        Please Log In
+    language:     en
+    robots:       noindex, nofollow
+
+  stylesheets:    [admin.css]
+
+  javascripts:    [admin.js]
+
+  has_layout:     true
+  layout:         login
+  
+secureSuccess:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        %APP_ADMIN_TITLE% - Restricted
+    language:     en
+    robots:       noindex, nofollow
+
+  stylesheets:    [admin.css]
+
+  javascripts:    [admin.js]
+
+  has_layout:     true
+  layout:         login

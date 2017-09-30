@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           States
+    theme:                 jroller
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          states
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:    
+         display: [state,abbreviation]
+         title: State List
+         table_method: loadIndex
+      filter:  
+         display: [state,abbreviation]
+      form:    ~
+      edit:    
+         title: Editing State
+      new:     
+         title: New State

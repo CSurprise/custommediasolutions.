@@ -1,0 +1,14 @@
+all:
+  admin_title: 'Custom Media Solutions L.L.C'
+  submission_email_to: custommediasolutions@gmail.com
+  submission_email_from: aarondario@gmail.com
+  fallback_content_id: '1'
+  mail_settings_host: mail.custommediasolutions.info
+  mail_settings_port: 26
+  mail_settings_encryption: ''
+  mail_settings_username: sendmail@custommediasolutions.info
+  mail_settings_password: sPlIC3d
+  default_meta_description: 'Modeling, models, modeling agencies, modeling agents, become a model, model in seattle, '
+  default_meta_keywords: 'Modeling, models, modeling agencies, modeling agents, become a model, model in seattle, '
+  admin_domain: custommediasolutions.info
+  timezone: US/Eastern

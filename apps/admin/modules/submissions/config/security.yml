@@ -1,0 +1,6 @@
+update:
+   credentials: [CoreSubmissionsEdit]
+create:
+   credentials: [SuperAdmin]
+new:
+   credentials: [SuperAdmin]

@@ -1,0 +1,27 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+content_by_id:
+  url:          /content/view/id/:id
+  param:        { module: content, action: view }
+content_after_submission:
+  url:   /thank-you/:id
+  param: { module: content, action: view }
+  requirements: { id: \d+ }
+content_by_slug:
+  url:          /view/:slug
+  param:        { module: content, action: slug }
+
+# default rules
+homepage:
+  url:   /
+  param: { module: default, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

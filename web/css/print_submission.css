@@ -1,0 +1,47 @@
+@page {
+  size: 11in 8.5in;/* width height */
+}
+body,html{
+	font-family:'Tahoma';
+	font-size:10pt;
+}
+table.submissions_printable{
+	
+}
+table.submissions_printable thead th{
+	text-align:left;
+	vertical-align:top;
+	background-color:#cccccc;
+}
+table.submissions_printable tfoot th{
+	text-align:left;
+	vertical-align:top;
+}
+table.submissions_printable tbody td{
+	text-align:left;
+	vertical-align:top;
+	padding: 3px;
+}
+table.submissions_printable tfoot tr
+{
+	background-color:#cccccc;
+}
+
+table.submissions_printable tbody tr.odd{
+	background-color:#ebeaea;
+}
+
+table.submissions_printable tbody tr.even{
+
+}
+
+.toolbar{
+	text-align:right;
+	padding:3px;	
+}
+
+.toolbar a{
+	color:#000;
+	text-decoration:none;
+	font-weight:bold;
+}
